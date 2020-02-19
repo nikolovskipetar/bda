@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).ready(function() {
 
     console.log("<!--Copyright: © Petar Nikolovski -->");
     console.log("Contact: https://www.facebook.com/profile.php?id=100000364560836");
@@ -9,7 +9,7 @@ $(document).ready(function () {
 
     //services section (changing content on click)
     $('.active-service').css('display', 'flex');
-    $('.services-row span').click(function () {
+    $('.services-row span').click(function() {
         let $this = $(this);
         let id = $this.attr('class');
         let contentWithClass = $('.content').is("." + id); //checking if content have "ID" class
@@ -26,10 +26,10 @@ $(document).ready(function () {
     });
 
     //gif before pages loaded
-    setTimeout(function () {
+    setTimeout(function() {
         $('.preloader').fadeOut();
         $('.full-content').css('visibility', 'unset');
-    }, 2500);
+    }, 3500);
 
 
     var btn = $('#button');
@@ -47,7 +47,7 @@ $(document).ready(function () {
     //scroll to top
     btn.on('click', function(e) {
         e.preventDefault();
-        $('html, body').animate({scrollTop:0}, '300');
+        $('html, body').animate({ scrollTop: 0 }, '300');
     });
 
 
