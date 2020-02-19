@@ -1,0 +1,310 @@
+/* #Media
+================================================== */
+
+@media (max-width: 767px) {
+    h1{
+        font-size: 38px;
+    }
+    .nav-item:after{
+        display: none;
+    }
+    .nav-item::before {
+        position: absolute;
+        display: block;
+        top: 15px;
+        left: 0;
+        width: 11px;
+        height: 1px;
+        content: "";
+        border: none;
+        background-color: #000;
+        vertical-align: 0;
+    }
+    .dropdown-toggle::after {
+        position: absolute;
+        display: block;
+        top: 10px;
+        left: -23px;
+        width: 1px;
+        height: 11px;
+        content: "";
+        border: none;
+        background-color: #000;
+        vertical-align: 0;
+        transition: all 200ms linear;
+    }
+    .dropdown-toggle[aria-expanded="true"]::after{
+        transform: rotate(90deg);
+        opacity: 0;
+    }
+    .dropdown-menu {
+        padding: 0 !important;
+        background-color: transparent;
+        box-shadow: none;
+        transition: all 200ms linear;
+    }
+    .dropdown-toggle[aria-expanded="true"] + .dropdown-menu {
+        margin-top: 10px !important;
+        margin-bottom: 20px !important;
+    }
+    body.dark .nav-item::before {
+        background-color: #fff;
+    }
+    body.dark .dropdown-toggle::after {
+        background-color: #fff;
+    }
+    body.dark .dropdown-menu {
+        background-color: transparent;
+        box-shadow: none;
+    }
+}
+
+/*laptop 1024 px responsive @media*/
+@media only screen and (max-width: 1024px) {
+    .bg-column {
+        width: 100%;
+    }
+    #JiSlider{
+        height: 70vh;
+    }
+    .wrapper {
+        display: none;
+    }
+    .hidden-row {
+        display: block;
+    }
+    .hidden-row .wrapper {
+        display: block !important;
+    }
+    .feature-style-three .feature-column .single-item {
+        padding: 30px 22px;
+    }
+    .slider-bg {
+        background-size: cover;
+    }
+    .lang-flags {
+        display: flex;
+    }
+    .feature-single-item .single-item {
+        font-size: 14px !important;
+    }
+    .t-margin {
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .services-row {
+        display: grid;
+        text-align: center;
+    }
+    .services-row .active-service {
+        width: 100%;
+        text-align: center;
+    }
+    .services-row span {
+        display: block !important;
+        margin-bottom: 10px !important;
+    }
+    .nav-item {
+        font-size: 15px;
+    }
+}
+
+/*tablet 900 px responsive @media*/
+@media only screen and (max-width: 900px) {
+    #JiSlider {
+        height: 58vh;
+    }
+    .slider-content h1 {
+        font-size: 40px;
+    }
+    .slider-content h4 {
+        font-size: 20px;
+    }
+    .t-margin {
+        margin-top: 40px;
+    }
+    .about-us-section img {
+        height: 330px;
+    }
+    .content img {
+        height: 330px;
+    }
+    .feature-style-three .feature-column .single-item {
+        height: 340px;
+    }
+    #contact .custom-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    #contact h5 {
+        font-size: 15px;
+    }
+    .responsive-column {
+        margin-top: 30px;
+    }
+    .feature-style-three .feature-column .single-item-contact {
+        width: 100%;
+    }
+    .rgba-over-bg h1{
+        font-size: 40px;
+    }
+    .content p {
+        font-size: unset;
+    }
+    #circle-about-us {
+        width: 400px !important;
+        height: 400px !important;
+        margin-bottom: 30px;
+    }
+    .about-us {
+        text-align: center;
+    }
+    .about-us-description {
+        text-align: left;
+        margin-bottom: 30px;
+    }
+    .text {
+        font-size: 14px;
+    }
+}
+
+/*mobile 500 px responsive @media*/
+@media only screen and (max-width: 500px) {
+    .slider-bg {
+        background-size: cover;
+        background-position: 77% 51%;
+    }
+    .slider-content h1 {
+        font-size: 30px;
+    }
+    .slider-content h4 {
+        font-size: 15px;
+    }
+    .lang-flags {
+        display: block;
+        margin-top: 15px;
+    }
+    .custom-container {
+        padding: 0 !important;
+    }
+    h1 {
+        font-size: 33px;
+    }
+    #contact .wrapper {
+        text-align: center;
+        margin-top: 10px;
+    }
+    #contact h5 {
+        text-align: center;
+    }
+    .copyright {
+        font-size: 12px;
+    }
+    #button {
+        width: 40px;
+        height: 40px;
+        font-size: 15px;
+    }
+    .contact-section {
+        padding: 30px;
+    }
+    #submit-button {
+        margin-bottom: 30px;
+    }
+    .content img {
+        height: unset;
+    }
+    .about-us-section img {
+        height: unset;
+    }
+    #circle-about-us {
+        width: 300px !important;
+        height: 300px !important;
+    }
+    .custom-a-container {
+        padding: 0 !important;
+    }
+    .cs2 {
+        padding: 40px !important;
+    }
+    #submit-button {
+        width: 100%;
+    }
+    .service-content .custom-container {
+        padding: 30px !important;
+    }
+    .feature-section {
+        padding: 15px;
+    }
+    .custom-div {
+        padding: 30px;
+    }
+    .certificate-col {
+        margin-top: 15px;
+    }
+    .certificate-col:first-child {
+        margin-top: 0 !important;
+    }
+    .cs2 .custom-row:nth-child(2) {
+        margin-top: 40px !important;
+    }
+    .feature-column:nth-child(-n+3) {
+        margin-bottom: 0px !important;
+    }
+    .main-footer {
+        padding: 83px 15px 40px 15px;
+    }
+    .text {
+        font-size: 16px;
+    }
+    .jislider__left-arrow {
+        left: 5px;
+    }
+    .jislider__right-arrow {
+        right: 5px;
+    }
+}
+
+/*mobile 375 px responsive @media*/
+@media only screen and (max-width: 375px) {
+    .rgba-over-bg h1 {
+        font-size: 30px;
+    }
+    .about-us-section .wrapper {
+        margin-top: -35px;
+    }
+    .feature-style-three .feature-column .single-item {
+        height: 340px !important;
+    }
+}
+
+/*media 320 px responsive @media*/
+@media only screen and (max-width: 320px) {
+    #submit-button {
+        font-size: 14px;
+    }
+    body {
+        font-size: 15px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 26px;
+    }
+    p {
+        font-size: 14px;
+    }
+    .wrapper button {
+        font-size: 14px;
+    }
+    .feature-style-three .feature-column .single-item {
+        height: 400px;
+        margin-bottom: 10px;
+    }
+    .feature-column:nth-child(-n+3) {
+        margin-bottom: 0 !important;
+    }
+}
